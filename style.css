@@ -65,7 +65,7 @@ nav ul li {
 nav ul li a {
     
    
-color: #f8bbd0; /* Texto rosa claro */
+color: #000000; /* Texto rosa claro */
     padding: 10px 15px;
     
     text
@@ -78,7 +78,7 @@ display: inline-block;
 nav ul li a:hover {
     
    
-background-color: #880e4f; /* Rosa mais escuro ao passar o mouse */
+background-color: #808080; /* Rosa mais escuro ao passar o mouse */
 }
 
 nav ul li ul {
@@ -88,7 +88,7 @@ nav ul li ul {
 position: absolute;
     
   
-background-color: #212121; /* Preto para o submenu */
+background-color: #FA8072; /* Preto para o submenu */
     list-style-type: none;
     
    
@@ -150,7 +150,7 @@ overflow: hidden;
     back
 
   
-background-color: #ffffff; /* Fundo branco para os blocos de mídia */
+background-color: #FFFFFF; /* Fundo branco para os blocos de mídia */
 }
 
 .item img,
@@ -165,7 +165,7 @@ display: block;
     
    
 padding: 10px;
-    background-color: #f8bbd0; /* Rosa claro para os textos das imagens */
+    background-color: #FA8072; /* Rosa claro para os textos das imagens */
     
    
 margin: 0;
@@ -189,10 +189,10 @@ text-align: center;
     padding: 10px;
     
    
-background-color: #212121; /* Preto para o rodapé */
+background-color: #FA8072; /* Preto para o rodapé */
     
    
-color: #f8bbd0; /* Texto rosa claro */
+color: #000000; /* Texto rosa claro */
     position: relative;
     
    
