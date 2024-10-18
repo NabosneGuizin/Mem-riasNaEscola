@@ -5,12 +5,12 @@ body {
 font-family: Arial, sans-serif;
     
    
-background-color: #fce4ec; /* Rosa claro de fundo */
+background-color: #808080; /* Rosa claro de fundo */
     margin: 0;
     padding: 0;
     
    
-color: #333; /* Texto em tom escuro para melhor legibilidade */
+color: #000000; /* Texto em tom escuro para melhor legibilidade */
 }
 
 
@@ -21,7 +21,7 @@ color: #333; /* Texto em tom escuro para melhor legibilidade */
 header {
     
    
-background-color: #212121; /* Preto escuro */
+background-color: #FA8072; /* Preto escuro */
     
    
 color: #f8bbd0; /* Rosa claro para o texto */
