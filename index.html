@@ -1,53 +1,184 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memorial de Fotos</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Memórias Escolares</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        nav {
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background-color: #3e8e41;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background-color: #4CAF50;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            top: 100%;
+            left: 0;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            display: block;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .item {
+            margin: 10px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        .item img,
+        .item video {
+            width: 100%;
+            display: block;
+        }
+
+        .item p {
+            padding: 10px;
+            background-color: #f4f4f4;
+            margin: 0;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <h1>Memorial de Fotos da Escola</h1>
+        <h1>Memórias Escolares</h1>
         <nav>
             <ul>
-                <li><a href="#relatos">Relatos</a></li>
-                <li><a href="#datas">Datas Importantes</a></li>
-                <li><a href="#imagens">Imagens</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Galeria</a>
+                    <ul>
+                        <li><a href="#fotos">Fotos</a></li>
+                        <li><a href="#videos">Vídeos</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="relatos">
-            <h2>Relatos</h2>
-            <div class="info">
-                <p>Compartilhe suas histórias e memórias da nossa escola.</p>
-            </div>
-        </section>
+        <!-- Seção de fotos -->
+        <div class="item" id="fotos">
+            <img src="foto1.jpg" alt="Foto da turma 1">
+            <p>Foto da turma no início do ano</p>
+        </div>
 
-        <section id="datas">
-            <h2>Datas Importantes</h2>
-            <div class="info">
-                <ul>
-                    <li><strong>2023:</strong> Inauguração da nova biblioteca.</li>
-                    <li><strong>2024:</strong> Festival de Cultura Escolar.</li>
-                </ul>
-            </div>
-        </section>
+        <div class="item">
+            <img src="foto2.jpg" alt="Dia da formatura">
+            <p>Dia da formatura</p>
+        </div>
 
-        <section id="imagens">
-            <h2>Imagens</h2>
-            <div class="info">
-                <img src="exemplo1.jpg" alt="Evento Escolar 1">
-                <img src="exemplo2.jpg" alt="Evento Escolar 2">
-            </div>
-        </section>
+        <div class="item">
+            <img src="foto3.jpg" alt="Foto dos professores">
+            <p>Professores queridos</p>
+        </div>
+
+        <!-- Seção de vídeos -->
+        <div class="item" id="videos">
+            <video controls>
+                <source src="video1.mp4" type="video/mp4">
+                Seu navegador não suporta a reprodução de vídeos.
+            </video>
+            <p>Vídeo da festa de fim de ano</p>
+        </div>
+
+        <div class="item">
+            <video controls>
+                <source src="video2.mp4" type="video/mp4">
+                Seu navegador não suporta a reprodução de vídeos.
+            </video>
+            <p>Apresentação de teatro</p>
+        </div>
+
+        <div class="item">
+            <video controls>
+                <source src="video3.mp4" type="video/mp4">
+                Seu navegador não suporta a reprodução de vídeos.
+            </video>
+            <p>Vídeo dos melhores momentos</p>
+        </div>
     </main>
 
     <footer>
-        <p>Colégio Morelli - Guilherme Nabosne - nº 11</p>
+        <p>&copy; Colégio Morelli - Guilherme Nabøsne - nº11 - 2K24</p>
     </footer>
 </body>
+
 </html>
