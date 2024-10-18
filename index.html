@@ -1,150 +1,168 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memórias Escolares</title>
     <style>
-        /* Estilos gerais */
+        /* Estilo geral do corpo */
         body {
-            background-color: #000000; /* Fundo preto */
-            color: #f0f0f0; /* Texto claro */
-            font-family: Arial, sans-serif;
+            font-family: Nunito Sans, sans-serif;
+            background-color: #1c1c1c; /* Fundo preto */
+            color: #f1f1f1; /* Texto em cinza claro */
             margin: 0;
             padding: 0;
         }
 
         /* Cabeçalho */
         header {
-            background-color: #111;
-            color: #ff0099; /* Detalhes em rosa */
+            background-color: #0d0d0d; /* Preto mais escuro para o cabeçalho */
+            color: #f48fb1; /* Rosa claro para o título */
             padding: 20px;
             text-align: center;
-            font-size: 2em;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
         }
 
         /* Menu de navegação */
-        nav {
-            background-color: #111;
-            overflow: hidden;
-        }
-
         nav ul {
             list-style-type: none;
-            margin: 0;
             padding: 0;
+            margin: 0;
+            text-align: center;
         }
 
         nav ul li {
-            float: left;
+            display: inline-block;
+            margin-right: 15px;
         }
 
         nav ul li a {
-            display: block;
-            color: #f0f0f0;
-            text-align: center;
-            padding: 14px 20px;
+            color: #f48fb1; /* Links em rosa claro */
             text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease;
         }
 
         nav ul li a:hover {
-            background-color: #ff0099;
+            border-bottom: 2px solid #f48fb1; /* Detalhe rosa ao passar o mouse */
         }
 
-        /* Menu cascata */
-        nav ul li ul {
-            display: none;
-            position: absolute;
-            background-color: #111;
-        }
-
-        nav ul li:hover ul {
-            display: block;
-        }
-
-        nav ul li ul li {
-            float: none;
-        }
-
-        nav ul li ul li a {
-            padding: 12px 16px;
-        }
-
-        /* Conteúdo principal */
-        .container {
+        /* Seção principal */
+        main {
             padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
-        .gallery, .videos {
-            margin: 20px 0;
+        /* Estilo dos blocos de imagens e vídeos */
+        main div {
+            margin: 15px;
+            width: 300px;
+            background-color: #2c2c2c; /* Blocos com fundo preto escuro */
+            border-radius: 10px;
+            overflow: hidden;
         }
 
-        .gallery img, .videos video {
+        main img,
+        main video {
             width: 100%;
-            max-width: 300px;
-            margin: 10px;
+            display: block;
+            border-bottom: 2px solid #f48fb1; /* Bordas em rosa */
+        }
+
+        main p {
+            padding: 10px;
+            color: #f48fb1; /* Texto rosa para legendas */
+            text-align: center;
         }
 
         /* Rodapé */
         footer {
-            background-color: #111;
-            color: #ff0099;
+            background-color: #0d0d0d; /* Fundo preto mais escuro */
+            color: #f48fb1; /* Texto rosa claro */
             text-align: center;
             padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
         }
     </style>
 </head>
-<body>
 
-    <!-- Cabeçalho -->
+<body>
     <header>
-        Memórias Escolares
+        <h1>Memórias Escolares</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Galeria</a>
+                    <ul>
+                        <li><a href="#fotos">Fotos</a></li>
+                        <li><a href="#videos">Vídeos</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Menu de navegação -->
-    <nav>
-        <ul>
-            <li><a href="#home">Início</a></li>
-            <li><a href="#galeria">Galeria</a>
-                <ul>
-                    <li><a href="#fotos">Fotos</a></li>
-                    <li><a href="#videos">Vídeos</a></li>
-                </ul>
-            </li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
+    <main>
+        <!-- Seção de fotos -->
+        <div id="fotos">
+            <img src="imagens/foto1.jpg" alt="Foto da turma 1">
+            <p>Foto da turma no início do ano</p>
+        </div>
 
-    <!-- Conteúdo principal -->
-    <div class="container">
-        <section id="galeria" class="gallery">
-            <h2>Galeria de Fotos</h2>
-            <img src="imagem1.jpg" alt="Foto 1">
-            <img src="imagem2.jpg" alt="Foto 2">
-            <img src="imagem3.jpg" alt="Foto 3">
-        </section>
+        <div>
+            <img src="imagens/foto2.jpg" alt="Dia da formatura">
+            <p>Dia da formatura</p>
+        </div>
 
-        <section id="videos" class="videos">
-            <h2>Vídeos</h2>
+        <div>
+            <img src="imagens/foto3.jpg" alt="Foto dos professores">
+            <p>Professores queridos</p>
+        </div>
+
+        <!-- Seção de vídeos -->
+        <div id="videos">
             <video controls>
-                <source src="video1.mp4" type="video/mp4">
-                Seu navegador não suporta vídeos.
+                <source src="videos/video1.mp4" type="video/mp4">
+                Seu navegador não suporta a reprodução de vídeos.
             </video>
-            <video controls>
-                <source src="video2.mp4" type="video/mp4">
-                Seu navegador não suporta vídeos.
-            </video>
-        </section>
-    </div>
+            <p>Vídeo da festa de fim de ano</p>
+        </div>
 
-    <!-- Rodapé -->
+        <div>
+            <video controls>
+                <source src="videos/video2.mp4" type="video/mp4">
+                Seu navegador não suporta a reprodução de vídeos.
+            </video>
+            <p>Apresentação de teatro</p>
+        </div>
+
+        <div>
+            <video controls>
+                <source src="videos/video3.mp4" type="video/mp4">
+                Seu navegador não suporta a reprodução de vídeos.
+            </video>
+            <p>Vídeo dos melhores momentos</p>
+        </div>
+    </main>
+
     <footer>
-        Escola XYZ
+        <p>&copy; Colégio Morelli * Guilherme Nabøsne  nº11 * 2K24</p>
     </footer>
-
 </body>
+
 </html>
