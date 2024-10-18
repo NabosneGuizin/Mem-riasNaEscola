@@ -1,0 +1,209 @@
+/* Definições gerais do corpo */
+body {
+    
+   
+font-family: Arial, sans-serif;
+    
+   
+background-color: #fce4ec; /* Rosa claro de fundo */
+    margin: 0;
+    padding: 0;
+    
+   
+color: #333; /* Texto em tom escuro para melhor legibilidade */
+}
+
+
+}
+
+/
+/* Cabeçalho */
+header {
+    
+   
+background-color: #212121; /* Preto escuro */
+    
+   
+color: #f8bbd0; /* Rosa claro para o texto */
+    padding: 20px;
+    
+    text
+
+   
+text-align: center;
+    
+   
+position: relative;
+}
+
+header h1 {
+    margin: 0;
+    
+   
+font-size: 2.5rem;
+}
+
+/* Menu de navegação */
+nav {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+nav ul {
+    
+    list
+list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    
+   
+color: #f8bbd0; /* Texto rosa claro */
+    padding: 10px 15px;
+    
+    text
+text-decoration: none;
+    
+   
+display: inline-block;
+}
+
+nav ul li a:hover {
+    
+   
+background-color: #880e4f; /* Rosa mais escuro ao passar o mouse */
+}
+
+nav ul li ul {
+    display: none;
+    
+   
+position: absolute;
+    
+  
+background-color: #212121; /* Preto para o submenu */
+    list-style-type: none;
+    
+   
+padding: 0;
+    
+   
+margin: 0;
+    
+   
+top: 100%;
+    
+   
+left: 0;
+}
+
+nav ul li:hover ul {
+    
+   
+display: block;
+}
+
+nav ul li ul li {
+    display: block;
+}
+
+/* Estilização da galeria de imagens e vídeos */
+main {
+    
+   
+display: flex;
+    
+   
+flex-wrap: wrap;
+    
+    justify
+justify-content: center;
+    
+   
+padding: 20px;
+}
+
+.item {
+    margin: 10px;
+    
+   
+width: 300px;
+    
+   
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    
+    overflo
+
+    
+overflow: hidden;
+    
+    backgroun
+
+    back
+
+  
+background-color: #ffffff; /* Fundo branco para os blocos de mídia */
+}
+
+.item img,
+.item video {
+    width: 100%;
+    
+   
+display: block;
+}
+
+.item p {
+    
+   
+padding: 10px;
+    background-color: #f8bbd0; /* Rosa claro para os textos das imagens */
+    
+   
+margin: 0;
+    
+    text
+
+   
+text-align: center;
+    font-weight: bold;
+}
+
+
+}
+
+/
+/* Rodapé */
+footer {
+    
+    text
+text-align: center;
+    padding: 10px;
+    
+   
+background-color: #212121; /* Preto para o rodapé */
+    
+   
+color: #f8bbd0; /* Texto rosa claro */
+    position: relative;
+    
+   
+margin-top: 20px;
+}
+
+footer p {
+    
+   
+margin: 5px;
+    
+   
+font-size: 0.9rem;
+}
