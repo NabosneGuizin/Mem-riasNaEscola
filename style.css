@@ -1,16 +1,19 @@
+/* Importação da fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 /* Estilo geral do corpo */
 body {
-    font-family: Nunito Sans, sans-serif;
-    background-color: #1c1c1c; /* Fundo preto */
-    color: #f1f1f1; /* Texto em cinza claro */
+    font-family: 'Poppins', sans-serif; /* Fonte estilosa */
+    background-color: #1b1b1b; /* Fundo preto */
+    color: #e0c3fc; /* Texto roxo pastel */
     margin: 0;
     padding: 0;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #0d0d0d; /* Preto mais escuro para o cabeçalho */
-    color: #f48fb1; /* Rosa claro para o título */
+    background-color: #252525; /* Preto escuro */
+    color: #ffb5e8; /* Rosa pastel */
     padding: 20px;
     text-align: center;
 }
@@ -18,32 +21,7 @@ header {
 header h1 {
     margin: 0;
     font-size: 3rem;
-}
-
-/* Menu de navegação */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 15px;
-}
-
-nav ul li a {
-    color: #f48fb1; /* Links em rosa claro */
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px;
-    border: 2px solid transparent;
-    transition: border-color 0.3s ease;
-}
-
-nav ul li a:hover {
-    border-bottom: 2px solid #f48fb1; /* Detalhe rosa ao passar o mouse */
+    font-weight: 600;
 }
 
 /* Seção principal */
@@ -54,32 +32,33 @@ main {
     justify-content: center;
 }
 
-/* Estilo dos blocos de imagens e vídeos */
+/* Estilo dos blocos de imagens */
 main div {
     margin: 15px;
     width: 300px;
-    background-color: #2c2c2c; /* Blocos com fundo preto escuro */
+    background-color: #2a2a2a; /* Bloco com fundo preto escuro */
     border-radius: 10px;
     overflow: hidden;
+    border: 2px solid #ffb5e8; /* Bordas em rosa pastel */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para realce */
 }
 
-main img,
-main video {
+main img {
     width: 100%;
     display: block;
-    border-bottom: 2px solid #f48fb1; /* Bordas em rosa */
+    border-bottom: 2px solid #e0c3fc; /* Bordas em roxo pastel */
 }
 
 main p {
     padding: 10px;
-    color: #f48fb1; /* Texto rosa para legendas */
+    color: #ffb5e8; /* Texto rosa pastel */
     text-align: center;
 }
 
 /* Rodapé */
 footer {
-    background-color: #0d0d0d; /* Fundo preto mais escuro */
-    color: #f48fb1; /* Texto rosa claro */
+    background-color: #252525; /* Fundo preto escuro */
+    color: #ffb5e8; /* Texto rosa pastel */
     text-align: center;
     padding: 10px;
 }
